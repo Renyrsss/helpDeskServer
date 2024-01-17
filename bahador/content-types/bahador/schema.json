@@ -10,7 +10,18 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "content-tags": {
+      "fieldName": "Tags",
+      "tags": {
+        "None": { "color": "neutral" },
+        "Done": { "color": "success" },
+        "In progress": { "color": "primary" },
+        "Error": { "color": "danger" }
+      },
+      "defaultTag": "None"
+    }
+  },
   "attributes": {
     "userName": {
       "type": "string"
@@ -29,6 +40,10 @@
     },
     "Done": {
       "type": "boolean"
+    },
+    "Tags": {
+      "type": "customField",
+      "customField": "plugin::content-tags.content-tags"
     }
   }
 }
