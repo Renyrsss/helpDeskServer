@@ -29,10 +29,7 @@
     },
     "Done": {
       "type": "boolean"
-    },
-    "Done1": {
-      "type": "customField",
-      "customField": "plugin::comments.comments"
     }
+
   }
 }
